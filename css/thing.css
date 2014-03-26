@@ -1,0 +1,27 @@
+body {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+#regex {
+	width: 320px;
+	font-family: monospace;
+	font-size: 12px;
+}
+
+.game {
+	margin: 0 auto;
+	width: 500px;
+}
+
+#grid table {
+    border-spacing: 0;
+}
+#grid td {
+    background-color: white;
+    width: 6px;
+    height: 6px;
+}
+#grid .on {
+    background-color: black;
+}

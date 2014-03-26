@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>something by cp</title>
+
+		<!-- jquery -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+		<script type="text/javascript" src="js/thing.js"></script>
+		<link rel="stylesheet" href="css/normalize.css"></link>
+		<link rel="stylesheet" href="css/thing.css"></link>
+	</head>
+	<body>
+		<h1>Regex fractals</h1>
+
+		<div id="explanation">
+			<p>Split the space into quadrants. Name them <strong>1</strong>,<strong>2</strong>,<strong>3</strong> and <strong>4</strong>. Split those quadrants up, and add another digit to the names. Repeat a few times!</p>
+			<p>Now each cell has a several-digit name. Turn a cell <em>on</em> or <em>off</em> depending on whether its name passes a regular expression. Use the length of the expression's matching groups to colour <em>on</em> cells.</p>
+
+			<p>Inspired by <a href="http://ssodelta.wordpress.com/2014/03/25/creating-colored-images-from-regular-expressions/">SSOΔ</a>.</p>
+		</div>
+
+		<div class="game">
+			<div id="grid"></div>
+			<p>Regex: <input id="regex" type="text" value="(.*)1(.*)"/></p>
+		</div>
+
+		<p>Link to this: <a id="link"></a></p>
+	</body>
+</html>
+
+
+
