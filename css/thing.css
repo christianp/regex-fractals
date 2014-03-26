@@ -2,6 +2,12 @@ body {
 	max-width: 900px;
 	margin: 0 auto;
 }
+a {
+	text-decoration: none;
+}
+#link {
+	font-family: monospace;
+}
 
 #regex {
 	width: 320px;
@@ -24,4 +30,10 @@ body {
 }
 #grid .on {
     background-color: black;
+}
+
+.examples {
+	font-family: monospace;
+	font-size: 16px;
+	line-height: 1.5em;
 }

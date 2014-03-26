@@ -59,7 +59,13 @@ $(function() {
 		});
 	}
 	$('#regex').on('change keyup',light);
-	var regex_source = location.search.slice(1) || '(.*)1(.*)';
+	var regex_source = decodeURIComponent(location.search.slice(1)) || '(.*)1(.*)';
 	$('#regex').val(regex_source);
 	light();
+
+	$('.examples a').on('click',function(e) {
+		e.preventDefault();
+		var regex_source = $(this).text();
+		$('#regex').val(regex_source).change();
+	});
 });
